@@ -23,6 +23,7 @@ public class PointPay extends PaymentMethod {
 		this.myPoint = myPoint;
 	}
 	
+	@Override // 오버라이딩 된 메소드를 명시적으로 표시, 컴파일 단계에서 잘못 작성 했을 경우 오류로 알려줌!
 	public void processPay() {
 		System.out.println(" === 포인트 결제 정보 === ");
 		System.out.println("- 결제 내역 : " + getPayName());
