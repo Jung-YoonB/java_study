@@ -36,6 +36,7 @@ public class CreditCardPay extends PaymentMethod {
 		this.installment = installment;
 	}
 	
+	@Override
 	public void processPay() {
 		System.out.println(" === 카드 결제 정보 === ");
 //		System.out.println("- 결제 내역 : " + this.payName);
