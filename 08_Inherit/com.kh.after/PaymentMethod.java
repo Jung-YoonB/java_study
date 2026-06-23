@@ -37,3 +37,4 @@ public class PaymentMethod {	// * 모든 클래스는 부모 클래스가 존재
 
 	}
 }
+
