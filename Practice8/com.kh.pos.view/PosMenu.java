@@ -115,6 +115,7 @@ public class PosMenu {
 		int checkout = pc.processPayment(payment);
 		
 		PaymentMethod[] ageCheck = pc.selectAllMethods();
+		// 배열로 받아 왔으면 뭐 확인하고 싶으면 객체로도 반드시 나눠서 생성 해줄것
 		PaymentMethod selectPayment = ageCheck[payment];
 		
 		if (checkout == 0) {
