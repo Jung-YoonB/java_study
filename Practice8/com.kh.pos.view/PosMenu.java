@@ -112,6 +112,12 @@ public class PosMenu {
 		int payment = sc.nextInt();
 		sc.nextLine(); // 버퍼 비우기
 		
+		if (payment < 0 || payment > 3) {
+			System.out.println(">> 잘못 입력되었습니다. 다시 시도 해주세요.");
+			System.out.println();
+			return;
+		}
+		
 		int checkout = pc.processPayment(payment);
 		
 		PaymentMethod[] ageCheck = pc.selectAllMethods();
