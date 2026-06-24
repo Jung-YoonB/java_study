@@ -122,9 +122,32 @@ public class PosMenu {
 			System.out.println(">> [결과] 결제 성공");
 		} else if (checkout == 1) {
 			System.out.printf(">> [결과] 제한연령 미달이거나, 모바일 페이 추가 보안 가이드(%d세) 기준 미달로 승인이 거절되었습니다.\n", selectPayment.getMinAge() + 3);
-		} else {
+		} else if (checkout == 2) {
 			System.out.println(">> [결과] 결제 성공, 캐시백 제휴 카드로 확인되어 멤버십 포인트 500점이 특별 적립되었습니다.");
+		} else {
+			System.out.println(">> [시스템 오류] 관리자에게 문의하세요.");
 		}
+		
+		/* 동등비교이므로 switch 문으로도 변경 가능
+		switch (checkout) {
+		case 0:
+			System.out.println(">> [결과] 결제 성공");
+			break;
+		
+		case 1:
+			System.out.printf([">> [결과] 제한연령 미달이거나, 모바일 페이 추가 보안 가이드(%d세) 기준미달로 승인이 거절되었습니다.\n", selectPayment.getMinAge()+3);
+			break;
+		
+		case 2: 
+			System.out.println(">>[결과] 결제 성공, 캐시백 제휴 카드로 확인되어 멤버십 포인트 500점이 특별 적립되었습니다.");
+			break;
+		
+		default:
+			System.out.println(">> [시스템 오류] 관리자에게 문의하세요.");
+			break;
+		}		
+		*/
+		
 		System.out.println();
 		
 	}
