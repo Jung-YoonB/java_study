@@ -9,7 +9,7 @@ public class View {
 	}
 	
 	public void display() {
-		controller.setModel(new Model("홍길동"));
+		controller.setModel("홍길동");
 		String result = controller.getInfo();
 		
 		System.out.println(result);		
