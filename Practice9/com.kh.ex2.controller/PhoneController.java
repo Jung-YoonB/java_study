@@ -15,6 +15,17 @@ public class PhoneController {
 		
 		result = new String[2];
 		
+		/* 항상된 for 문으로도 대입 가능
+		int index= 0;
+		for (Phone p : phone) {
+			if (p instanceof GalaxyNote9) {
+				result[index] = ((GalaxyNote9)p).printInformation();
+			} else if (p instanceof V40) {
+				result[index] = ((V40)p).printInformation();
+			}
+		}
+		*/
+		
 		for (int i=0; i<phone.length; i++) {
 			
 			if (phone[i] instanceof GalaxyNote9) {
