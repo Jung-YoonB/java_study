@@ -19,9 +19,9 @@ public class PhoneController {
 		int index= 0;
 		for (Phone p : phone) {
 			if (p instanceof GalaxyNote9) {
-				result[index] = ((GalaxyNote9)p).printInformation();
+				result[index++] = ((GalaxyNote9)p).printInformation();
 			} else if (p instanceof V40) {
-				result[index] = ((V40)p).printInformation();
+				result[index++] = ((V40)p).printInformation();
 			}
 		}
 		*/
