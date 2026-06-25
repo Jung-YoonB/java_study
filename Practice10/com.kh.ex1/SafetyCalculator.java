@@ -13,12 +13,9 @@ public class SafetyCalculator {
 	
 	public static void main(String[] args) {
 		
-		Scanner sc = new Scanner(System.in);
-		
-
 		System.out.println("=== 안전한 나눗셈 계산기 ===");
 		
-		try {
+		try (Scanner sc = new Scanner(System.in)){
 			System.out.printf("첫 번째 정수를 입력하세요: ");
 			int n1 = sc.nextInt();
 			System.out.printf("두 번째 정수를 입력하세요: ");
